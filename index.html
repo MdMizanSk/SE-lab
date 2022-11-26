@@ -2,284 +2,120 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <link rel="stylesheet" href="Home.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-}
-.sidebar{
-    background-color: bisque;
-    width: 15vw;
-    font-family: 'Fira Sans', sans-serif;
-    height: 100vh;
-}
-.sidebar nav{
-    padding: 26px;
-}
-.sidebar nav li{
-    list-style: none;
-    font-size: 30px;
-    padding-top: 30px;
-    position: sticky;
-    top: 0;
-}
-.main{
-    background-color: rgb(203, 236, 225);
-    width: 85vw;
-    font-family: 'Fira Sans', sans-serif;
-}
-.container{
-    display: flex;
-}
-.infoContainer{
-    background-color: rgb(255, 255, 255);
-    height: 80vh;
-    width: 75vw;
-    margin: 60px auto;
-    display: flex;
-    justify-content: space-around;
-}
-.infoContainer2{
-    background-color: rgb(255, 255, 255);
-    height: 134vh;
-    width: 75vw;
-    margin: 60px auto;
-    display: flex;
-    justify-content: space-around;
-}
-.devPic img {
-    height: 50vh;
-}
-.regNo{
-    color: green;
-}
-    </style>
-    <title>Md Mizan Sk</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FontAwesome 5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
 </head>
 <body>
-      <div class="container">
-        
-        <div class="sidebar"> 
-          <nav> 
-            <ul>
-              <li><a href=".infoContainer">Home</a></li>
-              <li><a href="#links">My classmates</a></li>
-              
-            </ul>
-          </nav>
+    <!-- Navbar top -->
+    <div class="navbar-top">
+        <div class="title">
+            <h1>Profile</h1>
         </div>
-        
-        
-        <div class="main">
-          <div class="infoContainer">
-            <div class="devInfo">
-              <div class="hello">Hi I am</div>
-              <div class="name"><h2>Md Mizan Sk</h2></div>
-              <div class="about"><b>Student ,<span class="regNo">Reg No : 21MCMC23</span></b></div>
-              
-              <div class="about"><b>.</b></div>
-              <div class="about"><b>Master of Computer  Application</b></div>              
-              <div class="about"><h2>University of Hyderabad</h2></div>
-              
-              <div class="about"><b>.</b></div>
-              <div class="about"><b>Bachalor of Computer  Application</b></div>              
-              <div class="about"><h2>Kazi Nazrul University</h2></div>
 
-              <div class="about"><b>.</b></div>
-              <div class="about"><b>Permanent Address</b></div>              
-              <div class="about">
-                <Address>
-                  Village : Lal Bazar <br>
-                  P.O. : Mejia <br>
-                  District : Bankura<br>
-                  State : West Bengal <br>
-                  722143
-                </Address>
-              </div>
-              
-              
-              
-            </div>
-            <div class="devPic">
-                <img src="dp.pic">
-            </div>
+        <!-- Navbar -->
+        <ul>
+            <!-- <li>
+                <a href="#message">
+                    <span class="icon-count">29</span>
+                    <i class="fa fa-envelope fa-2x"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#notification">
+                    <span class="icon-count">59</span>
+                    <i class="fa fa-bell fa-2x"></i>
+                </a>
+            </li> -->
+            <li>
+                <a href="#sign-out">
+                    <i class="fa fa-sign-out-alt fa-2x"></i>
+                </a>
+            </li>
+        </ul>
+        <!-- End -->
+    </div>
+    <!-- End -->
 
-          </div>
-          
-          <div id="links" class="infoContainer2">
+    <!-- Sidenav -->
+    <div class="sidenav">
+        <div class="profile">
+            <img src="pic - Copy.jpg" alt="" width="100" height="120">
+
+            <div class="name">
+                Md Mizan Sk
+            </div>
+            <div class="job">
+                21MCMC23
+            </div>
+        </div>
+
+        <div class="sidenav-url">
+            <div class="url">
+                <a href="#profile" class="active">Profile</a>
+                <hr align="center">
+            </div>
+            <div class="url">
+                <a href="#settings">Settings</a>
+                <hr align="center">
+            </div>
+        </div>
+    </div>
+    <!-- End -->
+
+    <!-- Main -->
+    <div class="main">
+       
+        <div class="card">
+            <div class="card-body">
+                <i class="fa fa-pen fa-xs edit"></i>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Name</td>
+                            <td>:</td>
+                            <td>Md Mizan Sk</td>
+                        </tr>
+                        <tr>
+                            <td>Program</td>
+                            <td>:</td>
+                            <td>MCA</td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td>:</td>
+                            <td>camdmizan@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td>:</td>
+                            <td>Mejia , Bankura  , WB</td>
+                        </tr>
+                        <tr>
+                            <td>Hobbies</td>
+                            <td>:</td>
+                            <td>gyming, running, problme solveing</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Skill</td>
+                            <td>:</td>
+                            <td>  Java ,react, node, mysql</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        
             
-            <table class="classmates">
-              <caption style="text-align:center ;"><h2>Classmates Details</h2></caption>
-              <tr>
-                <th>Registration No</th>
-                <th>Name</th>
-                <th>Profile</th>
-              </tr>
-              <tr>
-                <td>21MCMC01</td>
-                <td>JATIN DEHMIWAL</td>
-                <td><a href="">Link</a></td>  
-              </tr>
-              <tr>
-                <td>21MCMC02</td>
-                <td>HARMAIN AHMAD</td>
-                <td><a href="">Link</a></td>  
-              </tr>
-              <tr>
-                <td>21MCMC03</td>
-                <td>AMIT KUMAR</td>
-                <td><a href="">Link</a></td>  
-              </tr>
-              <tr>
-                <td>21MCMC04</td>
-                <td>YASH KASHYAP</td>
-                <td><a href="">Link</a></td>  
-              </tr>
-              <tr>
-                <td>21MCMC05</td>
-                <td>RADHIKA </td>
-                <td><a href="">Link</a></td>  
-              </tr>
-              <tr>
-                <td>21MCMC06</td>
-                <td>MUSKAN GOYAL</td>
-                <td><a href="">Link</a></td>  
-              </tr>
-              <tr>
-                <td>21MCMC08</td>
-                <td>SHAWETA KUMARI</td>
-                <td><a href="">Link</a></td>  
-              </tr>
-              <tr>
-                <td>21MCMC09</td>
-                <td>RITWICK VERMA</td>
-                <td><a href="">Link</a></td>  
-              </tr>
-              <tr>
-                <td>21MCMC10</td>
-                <td>KM.SHIVANI MODANWAL</td>
-                <td><a href="">Link</a></td>  
-              </tr>
-              <tr>
-                <td>21MCMC11</td>
-                <td>KESHAV VED</td>
-                <td><a href="">Link</a></td>  
-              </tr>
-              <tr>
-                <td>21MCMC12</td>
-                <td>AYUSHI PAL</td>
-                <td><a href="">Link</a></td>  
-              </tr>
-              <tr>
-                <td>21MCMC13</td>
-                <td>CHETAN KUMAR</td>
-                <td><a href="">Link</a></td>  
-              </tr>
-              <tr>
-                <td>21MCMC14</td>
-                <td>RAVI PRAKASH PARMAR</td>
-                <td><a href="">Link</a></td>  
-              </tr>
-              <tr>
-                <td>21MCMC15</td>
-                <td>SAMAR SARKAR </td>
-                <td><a href="">Link</a></td>  
-              </tr>
-              <tr>
-                <td>21MCMC16</td>
-                <td>RISHABH KUMAR </td>
-                <td><a href="">Link</a></td>  
-              </tr>
-              <tr>
-                <td>21MCMC17</td>
-                <td>RAJKUMAR PRAJAPATI </td>
-                <td><a href="">Link</a></td>  
-              </tr>
-              <tr>
-                <td>21MCMC18</td>
-                <td>HARSH PATIL</td>
-                <td><a href="">Link</a></td>  
-              </tr>
-              <tr>
-                <td>21MCMC19</td>
-                <td>MANVENDER TOPPO</td>
-                <td><a href="">Link</a></td>  
-              </tr>
-              <tr>
-                <td>21MCMC20</td>
-                <td>VIJETA KANDULNA </td>
-                <td><a href="">Link</a></td>  
-              </tr>
-              <tr>
-                <td>21MCMC21</td>
-                <td>ADARSH KUMAR GUPTA</td>
-                <td><a href="">Link</a></td>  
-              </tr>
-              <tr>
-                <td>21MCMC24</td>
-                <td>MAYANK VISHWAKARMA</td>
-                <td><a href="">Link</a></td>  
-              </tr>
-              <tr>
-                <td>21MCMC25</td>
-                <td>SHASHANK CHAURASIA</td>
-                <td><a href="">Link</a></td>  
-              </tr>
-              <tr>
-                <td>21MCMC26</td>
-                <td>PIYUSH GADGE</td>
-                <td><a href="">Link</a></td>  
-              </tr>
-              <tr>
-                <td>21MCMC27</td>
-                <td>GOURAV ARYA</td>
-                <td><a href="">Link</a></td>  
-              </tr>
-              <tr>
-                <td>21MCMC28</td>
-                <td>SNEHA YADAV
-                </td>
-                <td><a href="">Link</a></td>  
-              </tr>
-              <tr>
-                <td>21MCMC29</td>
-                <td>AADARSH PRAJAPATI </td>
-                <td><a href="">Link</a></td>  
-              </tr>
-              <tr>
-                <td>21MCMC30</td>
-                <td>PRADUMN YADAV</td>
-                <td><a href="https://spiker1729.github.io/">Link</a></td>  
-              </tr>
-              <tr>
-                <td>21MCMC31</td>
-                <td>Y SANTOSH SAI DATTA</td>
-                <td><a href="">Link</a></td>  
-              </tr>
-              <tr>
-                <td>21MCMC32</td>
-                <td>ADARSH LAMA</td>
-                <td><a href="">Link</a></td>  
-              </tr>
-              <tr>
-                <td>21MCMC33</td>
-                <td>PRINS KUMAR SHARMA</td>
-                <td><a href="">Link</a></td>  
-              </tr>
-              <tr>
-                <td>21MCMC34</td>
-                <td>CHETAN SONI</td>
-                <td><a href="">Link</a></td>  
-              </tr>
-            </table>
-          </div>
         </div>
-      </div>
-      
-    
+    </div>
+    <!-- End -->
 </body>
 </html>
